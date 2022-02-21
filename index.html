@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <table class="table">
         <thead>
           <tr>
@@ -67,7 +68,7 @@
             </tr>
             <tr>
                 <th scope="row">Üzemanyag egységára: </th>
-                <td><from><input type ="text"></from></td> 
+                <td><from><input type ="text" id ="uzemar"></from></td> 
             </tr>
             
               <tbody>
@@ -90,8 +91,8 @@
                 <tr>
                     
                     <th scope="row">Összes megtett távolság Google Maps alapján:  </th>
-                    <td><from><input type ="text"></from></td> 
-                    <td><button type="button" >Ellenőrzés és kiszámítás</button></td>
+                    <td><from><input type ="text" id="km"></from></td> 
+                    <td><button type="button" id="g1" onclick="klikk()">Ellenőrzés és kiszámítás</button></td>
                 </tr>
                 <table class="table">
                     <thead>
@@ -113,9 +114,15 @@
                   
         </tbody> 
         </thead>
-      </table>   
+      </table>  
+    
       <div class="col-md-12 text-center">
-        <button type="button" id="gomb2">Nyomtatás</button>
+        <button type="button" id="g2">Nyomtatás</button>
     </div>
+</div> 
+<script src="script.js"> </script>
+
+
+
 </body>
 </html>
