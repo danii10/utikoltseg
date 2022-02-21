@@ -37,6 +37,10 @@
                 <th scope="col">Gépjármű- és üzemanyagadatok</th>                      
               </tr>
               <tr>
+                <th scope="row">Gépjármű gyártmánya, típusa:  </th>
+                <td><from><input type ="text"></from></td> 
+            </tr>
+              <tr>
                 <th scope="row">Üzemanyagfajtája</th>
                 <td><select class="form-select" aria-label="Default select example">
                     <option selected>Válassza ki az üzemanyagtípust</option>
@@ -58,13 +62,55 @@
               </tr>
             </tr>
             <tr>
-                <th scope="row">Utazás dátuma:  </th>
-                <td><from><input type ="text"></from></td> 
+                <th scope="row">Utazás dátuma:</th>
+                <td><form><input type="date" > </form></td>
             </tr>
             <tr>
                 <th scope="row">Üzemanyag egységára: </th>
                 <td><from><input type ="text"></from></td> 
             </tr>
+            
+              <tbody>
+                <tr>
+                    <th scope="col">A megtett út adatai</th>                      
+                  </tr>
+                <tr>
+                  <th scope="row">Kiinndulási hely:  </th>  
+                   <td><from><input type ="text"></from></td> 
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Úticél:</th>
+                    <td><from><input type ="text"></from></td> 
+                </tr>
+                <tr>
+                    <th scope="row">További úticél:  </th>
+                    <td><from><input type ="text"></from></td> 
+                </tr>
+                <tr>
+                    
+                    <th scope="row">Összes megtett távolság Google Maps alapján:  </th>
+                    <td><from><input type ="text"></from></td> 
+                    <td><button type="button" >Ellenőrzés és kiszámítás</button></td>
+                </tr>
+                <table class="table">
+                    <thead>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Útiköltség:  </th>
+                        <td><span id="1"></span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Amortizáció: </th>
+                        <td><span id="2"></span></td> 
+                      </tr>
+                      <tr>
+                        <th scope="row">Összesen elszámolható költség: </th>
+                        <td><span id="3"></span></td> 
+                      </tr>
+                    </tbody>
+                  </table>
         </tbody> 
         </thead>
       </table>    
